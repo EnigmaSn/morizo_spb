@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__back"></div>
+      <div class="page-header__logo">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/sprite_svg/logo-desktop.svg">
+            <img src="img/sprite_svg/logo-mobile.svg" alt="product-photo">
+          </picture>
+        </a>
+      </div>
+      <div class="page-header__menu">
+        <a class="page-header__menu-close" href="#">
+
+        </a>
+        <div class="page-header__menu-open">
+          <ul>
+            <li><a href="#">Онлайн-сервисы </a></li>
+            <li><a href="#">Тарифы и льготы</a></li>
+            <li><a href="#">Новости ЖКХ</a></li>
+            <li>
+              <a href="#">Полезная информация</a>
+              <ul>
+                <li><a href="#">Информация по оплате коммунальных услуг</a></li>
+                <li><a href="#">Законодательство</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="payment">
+      <div class="payment__wrapper">
+        <span>Оплачивайте моментально</span>
+        <img src="img/pay.png" alt="Виды оплаты">
+        <h2>Оплата счета за жилье и коммунальные услуги</h2>
+        <p>Без регистрации и комиссии</p>
+        <div class="payment__form">
+          <div class="payment__form-header">
+            <a class="active" data-id="1">Оплата онлайн</a>
+            <a data-id="2">Другие способы оплаты</a>
+          </div>
+          <label for="#personal-account"></label>
+          <input id="personal-account" type="text" placeholder="9 цифр">
+          <label>Период</label>
+          <select>
+            <option>Август</option>
+            <option>Сентябрь</option>
+          </select>
+          <select>
+            <option>2016</option>
+            <option>2017</option>
+          </select>
+          <button type="submit">перейти к оплате</button>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__wrapper">
+        <h2>Сервисы потребителей</h2>
+        <div class="services__items">
+          <div class="services__item">
+            <span>Личный кабинет абонента ЖКХ <a href="#">Войти</a></span>
+          </div>
+          <div class="services__item">
+            <span>Расчет льгот за ЖКУ <a href="#">Перейти к расчету</a></span>
+          </div>
+          <div class="services__item">
+            <span>Ввод показаний приборов учета </span>
+          </div>
+          <div class="services__item">
+            <span>Калькулятор коммунальных платежей</span>
+          </div>
+          <div class="services__item">
+            <span>Капитальные ремонт - найди свой дом</span>
+          </div>
+          <div class="services__item">
+            <span>Оценка деятельности управляющих компаний</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pulse">
+      <div class="pulse__wrapper">
+        <h1>Пульс города</h1>
+        <div class="pulse__items">
+          <span class="pulse__show-all">Показать все</span>
+          <span class="pulse__repairs">Ремонт</span>
+          <span class="pulse__orders">Заявки</span>
+          <span class="pulse__accident">Происшествия</span>
+        </div>
+      </div>
+      <div class="pulse__map">
+        <div class="pulse__wrapper">
+          <div class="pulse__form">
+            <input type="text" placeholder="Поиск по карте">
+            <button>Найти</button>
+          </div>
+          <div class="pulse__results">
+            <div>
+              <span class="pulse__result-info">Всего заявок в системе</span>
+              <span class="pulse__result-num">83 883</span>
+            </div>
+            <div>
+              <span class="pulse__result-info">Заявок сегодня</span>
+              <span class="pulse__result-num">524</span>
+            </div>
+            <div>
+              <span class="pulse__result-info">Выполнено заявок за 2016 год</span>
+              <span class="pulse__result-num">72324</span>
+            </div>
+            <div>
+              <a href="#">Сообщить о проблеме</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="news-all">
+      <section class="news">
+        <h1>Новости</h1>
+        <div class="news__item">
+          <img src="#" alt="фото новости">
+          <div class="news__info">
+            <span>20 октября 2016</span>
+            <h3>Оформление денежной компенсации</h3>
+            <p>Начался приём заявлений на оформление денежной компенсации расходов на уплату взносов на капитальный ремонт для пенсионеров.</p>
+            <a href="#">36 комментариев</a>
+            <a href="#">Поделиться</a>
+          </div>
+          <div class="news__info">
+            <span>20 октября 2016</span>
+            <h3>Изменение тарифов</h3>
+            <p>Изменение тарифов на коммунальные услуги и размера платы за содержание жилого помещения на территории Санкт-Петербурга.</p>
+            <a href="#">36 комментариев</a>
+            <a href="#">Поделиться</a>
+          </div>
+          <div class="news__info">
+            <span>20 октября 2016</span>
+            <h3>График отключения горячей воды июль 2016 </h3>
+            <p>В июне продолжится постепенное отключение горячего водоснабжения в  отключения горячей воды июнь 2016.</p>
+            <a href="#">36 комментариев</a>
+            <a href="#">Поделиться</a>
+          </div>
+        </div>
+      </section>
+      <section class="important-info">
+        <div class="important-info__wrapper">
+          <h2>Важная информация</h2>
+          <div class="important-info__items">
+            <div class="important-info__item">
+              <img src="#" alt="фото новости">
+              <span>20 октября 2016</span>
+              <h3>Изменение тарифов</h3>
+              <p>Изменение тарифов на коммунальные услуги и размера платы за содержание жилого помещения на территории Санкт-Петербурга.</p>
+              <a href="#">36 комментариев</a>
+              <a href="#">Поделиться</a>
+            </div>
+            <div class="important-info__item">
+              <img src="#" alt="фото новости">
+              <span>20 октября 2016</span>
+              <h3>График отключения горячей воды 2016</h3>
+              <p>В июне продолжится постепенное отключение горячего водоснабжения в  отключения горячей воды июнь 2016.</p>
+              <a href="#">36 комментариев</a>
+              <a href="#">Поделиться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a href="news-all__show" class="">Показать все новости</a>
+    </div>
+  </main>
+  <footer class="page-footer">
+
+  </footer>
+</body>
+</html>
