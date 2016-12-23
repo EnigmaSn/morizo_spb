@@ -18,10 +18,35 @@
           </picture>
         </a>
       </div>
+      <div class="page-header__top">
+        <span>Портал услуг ЖКХ Санкт-Петербурга</span>
+        <a href="#" class="page-header__eye">Aa</a>
+        <a href="#" class="page-header__reg">Регистрация</a>
+        <a href="#" class="page-header__login">Вход</a>
+        <div class="page-header__soc">
+          <ul>
+            <li class="page-header__soc-fb"><a href="#"></a></li>
+            <li class="page-header__soc-vk"><a href="#"></a></li>
+            <li class="page-header__soc-ok"><a href="#"></a></li>
+            <li class="page-header__soc-gu"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-header__bottom">
+        <div class="page-header__second-menu">
+          <ul>
+            <li><a href="#">Гражданам</a></li>
+            <li><a href="#">Юридическим лицам</a></li>
+            <li><a href="#">О предприятии</a></li>
+          </ul>
+        </div>
+        <div class="page-header_phone">
+          <span>Телефонная служба</span>
+          <a href="tel:+78123358508">+7 (812) 335-85-08</a>
+        </div>
+      </div>
       <div class="page-header__menu">
-        <a class="page-header__menu-close" href="#">
-
-        </a>
+        <a class="page-header__menu-close" href="#"></a>
         <div class="page-header__menu-open">
           <ul>
             <li><a href="#">Онлайн-сервисы </a></li>
@@ -39,10 +64,20 @@
           </ul>
         </div>
       </div>
-
     </div>
   </header>
   <main>
+    <section class="search">
+      <div class="search__wrapper">
+        <label for="#search"></label>
+        <input id="search" type="text" placeholder="Ключевое слово для поиска">
+        <select>
+          <option>Расширенный поиск</option>
+          <option>Пыщ</option>
+        </select>
+        <a href="#">Найти</a>
+      </div>
+    </section>
     <section class="payment">
       <div class="payment__wrapper">
         <span>Оплачивайте моментально</span>
@@ -133,59 +168,227 @@
     <div class="news-all">
       <section class="news">
         <h1>Новости</h1>
-        <div class="news__item">
+        <article class="news__item">
           <img src="#" alt="фото новости">
           <div class="news__info">
-            <span>20 октября 2016</span>
+            <time datetime="2016-10-20">20 октября 2016</time>
             <h3>Оформление денежной компенсации</h3>
             <p>Начался приём заявлений на оформление денежной компенсации расходов на уплату взносов на капитальный ремонт для пенсионеров.</p>
             <a href="#">36 комментариев</a>
             <a href="#">Поделиться</a>
           </div>
+        </article>
+        <article class="news__item">
+          <img src="#" alt="фото новости">
           <div class="news__info">
-            <span>20 октября 2016</span>
+            <time datetime="2016-10-20">20 октября 2016</time>
             <h3>Изменение тарифов</h3>
             <p>Изменение тарифов на коммунальные услуги и размера платы за содержание жилого помещения на территории Санкт-Петербурга.</p>
             <a href="#">36 комментариев</a>
             <a href="#">Поделиться</a>
           </div>
+        </article>
+        <article class="news__item">
+          <img src="#" alt="фото новости">
           <div class="news__info">
-            <span>20 октября 2016</span>
+            <time datetime="2016-10-20">20 октября 2016</time>
             <h3>График отключения горячей воды июль 2016 </h3>
             <p>В июне продолжится постепенное отключение горячего водоснабжения в  отключения горячей воды июнь 2016.</p>
             <a href="#">36 комментариев</a>
             <a href="#">Поделиться</a>
           </div>
-        </div>
+        </article>
       </section>
       <section class="important-info">
         <div class="important-info__wrapper">
           <h2>Важная информация</h2>
           <div class="important-info__items">
-            <div class="important-info__item">
+            <article class="important-info__item">
               <img src="#" alt="фото новости">
-              <span>20 октября 2016</span>
+              <time datetime="2016-10-20">20 октября 2016</time>
               <h3>Изменение тарифов</h3>
               <p>Изменение тарифов на коммунальные услуги и размера платы за содержание жилого помещения на территории Санкт-Петербурга.</p>
               <a href="#">36 комментариев</a>
               <a href="#">Поделиться</a>
-            </div>
-            <div class="important-info__item">
+            </article>
+            <article class="important-info__item">
               <img src="#" alt="фото новости">
-              <span>20 октября 2016</span>
+              <time datetime="2016-10-20">20 октября 2016</time>
               <h3>График отключения горячей воды 2016</h3>
               <p>В июне продолжится постепенное отключение горячего водоснабжения в  отключения горячей воды июнь 2016.</p>
               <a href="#">36 комментариев</a>
               <a href="#">Поделиться</a>
-            </div>
+            </article>
           </div>
         </div>
       </section>
       <a href="news-all__show" class="">Показать все новости</a>
     </div>
+    <section class="quiz">
+      <div class="quiz__wrapper">
+        <h2>Опрос</h2>
+        <h3>Каким способом вы чаще всего оплачиваете коммунальные услуги?</h3>
+        <form action="#">
+          <input id="bank" type="radio">
+          <label for="#bank">Через отделение банка</label>
+          <input id="cab" type="radio">
+          <label for="#cab">Через Личный кабинет</label>
+          <input id="else" type="radio">
+          <label for="#else">Через сторонние сервисы</label>
+          <input id="bank" type="radio">
+          <label for="#bank">Через отделение банка</label>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <div class="interaction">
+      <div class="interaction__left">
+        <section class="advertising">
+          <div class="advertising__wrapper">
+            <h2>Реклама на сайте</h2>
+            <img src="img/advertising.jpg" width="240" height="370" alt="реклама">
+          </div>
+        </section>
+        <div class="social"></div>
+      </div>
+      <div class="interaction__right">
+        <section class="forum">
+          <h2>Форум</h2>
+          <div class="forum__items">
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Вопросы об эксплуатации счетчиков</h3>
+              <p>Вам необходимо вызвать техника управляющей организации, для составления акта</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+            <div class="forum__item">
+              <a href="#">Коммунальные услуги - Перерасчеты</a>
+              <h3>Реструктуризация Догла/отсрочка Оплаты, Растут долги</h3>
+              <p>Перерасчет После Просроченной Поверки Счетчика, Оплата По Факту Потребления</p>
+              <time datetime="2016-11-02 14:28:48">Дата: 02.11.2016 14:28:48</time>
+              <span>Всего комментариев: 54</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="bottom-menu">
+      <div class="bottom-menu__wrapper">
+        <a href="#">Онлайн-сервисы</a>
+        <a href="#">Тарифы и льготы</a>
+        <a href="#">Новости ЖКХ</a>
+        <a href="#">Полезная информация</a>
+        <a href="#">Законодательство</a>
+        <a href="#">Форум</a>
+        <a href="#">Контакты</a>
+      </div>
+    </section>
+    <section class="gov">
+      <div class="gov__wrapper">
+        <div class="gov__slide">
+          <div class="gov__item">
+            <a href="#">Единый инвестиционный портал Санкт-Петербурга</a>
+            <a href="#">spbinvestment.ru</a>
+          </div>
+          <div class="gov__item">
+            <a href="#">Государственные услуги в Санкт-Петербурге</a>
+            <a href="#">gu-spb.ru</a>
+          </div>
+          <div class="gov__item">
+            <a href="#">Официальный сайт администрации Санкт-Петербурга</a>
+            <a href="#">gov-spb.ru</a>
+          </div>
+        </div>
+        <div class="gov__slide"></div>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
-
+    <div class="page-footer__wrapper">
+      <div class="page-footer__about">
+        <span>Все права защищены  2006-2016 год</span>
+        <span>ГУП ВЦКП “ЖИЛИЩНОЕ ХОЗЯЙСТВО”</span>
+      </div>
+      <div class="page-footer__links">
+        <ul>
+          <li><a href="#">Карта сайта</a></li>
+          <li><a href="#">Порядок работы с сообщениями</a></li>
+          <li><a href="#">Условия пользования информацией</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
