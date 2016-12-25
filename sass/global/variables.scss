@@ -1,0 +1,12 @@
+$body-bg: #ffffff;
+$black: #000000;
+$white: #ffffff;
+$blue: #1f5894;
+$blue-h: #205fa1;
+$gray: #cfcfcf;
+
+$tablet-widths: "(min-width: 1054px)";
+$desktop-widths: "(min-width: 1900px)";
+
+// юзать вот так:
+// @media #{$mobile-widths-only};

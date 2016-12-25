@@ -1,0 +1,63 @@
+.page-header {
+  &__wrapper {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 96px;
+    position: relative;
+  }
+  &__back {
+    width: 12px;
+    height: 22px;
+    background-position: -616px -10px;
+    background-image: url("../img/spritesheet.png");
+  }
+  &__top {
+    display: none;
+  }
+  &__bottom {
+    display: none;
+  }
+  &__menu {
+    // position: relative;
+    &-close {
+      display: block;
+      width: 20px;
+      height: 16px;
+      background-image: url("../img/menu.svg");
+    }
+    &-open {
+      // display: none;
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 96px;
+      ul {
+        padding: 0;
+        margin: 0;
+        background-color: $white;
+      }
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        padding: 10px 30px;
+        border-bottom: 1px solid $gray;
+
+          ul {
+            display: none;
+          }
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        display: block;
+      }
+      &-show {
+        display:block;
+      }
+    }
+
+  }
+}
