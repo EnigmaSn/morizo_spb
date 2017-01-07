@@ -84,26 +84,28 @@
     <section class="payment">
       <div class="payment__wrapper">
         <span>Оплачивайте моментально</span>
-        <img src="img/pay.png" alt="Виды оплаты">
+        <div class="payment__img"></div>
         <h2>Оплата счета за жилье и коммунальные услуги</h2>
         <p>Без регистрации и комиссии</p>
+        <div class="payment__form-header">
+          <a class="active" data-id="1">Оплата онлайн</a>
+          <a data-id="2">Другие способы оплаты</a>
+        </div>
         <div class="payment__form">
-          <div class="payment__form-header">
-            <a class="active" data-id="1">Оплата онлайн</a>
-            <a data-id="2">Другие способы оплаты</a>
-          </div>
-          <label for="#personal-account"></label>
+          <label for="#personal-account">Лицевой счет</label>
           <input id="personal-account" type="text" placeholder="9 цифр">
           <label>Период</label>
-          <select>
-            <option>Август</option>
-            <option>Сентябрь</option>
-          </select>
-          <select>
-            <option>2016</option>
-            <option>2017</option>
-          </select>
-          <button type="submit">перейти к оплате</button>
+          <div class="payment__data">
+            <select class="payment__month">
+              <option>Август</option>
+              <option>Сентябрь</option>
+            </select>
+            <select class="payment__year">
+              <option>2016</option>
+              <option>2017</option>
+            </select>
+          </div>
+          <button type="submit">Перейти к оплате</button>
         </div>
       </div>
     </section>

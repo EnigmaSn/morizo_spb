@@ -1,0 +1,6 @@
+.search {
+  display: none;
+  &__wrapper {
+    @include container;
+  }
+}
